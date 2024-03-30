@@ -5,8 +5,8 @@ list_2=[]
 # print("Введите массив: ")
 # list_1=input().split(',')
 
-for i in range(random.randint(0,3)):
-    rand=random.choice(list_1)
-    if rand not in list_2:
-        list_2.append(rand)
+for i in list_1:
+    if len(i) <=3:
+        list_2.append(i)
 print (list_2)
+
